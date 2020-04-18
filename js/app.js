@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swLocation = '/twittor/sw.js';
+var swLocation = '/Komicilios/sw.js';
 
 if (navigator.serviceWorker) {
 
@@ -16,6 +16,7 @@ if (navigator.serviceWorker) {
 // Referencias de jQuery
 
 var titulo      = $('#titulo');
+var titulo2     = $('#titulo2');
 var nuevoBtn    = $('#nuevo-btn');
 var salirBtn    = $('#salir-btn');
 var cancelarBtn = $('#cancel-btn');
@@ -45,7 +46,7 @@ function crearMensajeHTML(mensaje, personaje) {
         </div>
         <div class="bubble-container">
             <div class="bubble">
-                <h3>@${ personaje }</h3>
+                <h3>${ personaje }</h3>
                 <br/>
                 ${ mensaje }
             </div>
@@ -77,8 +78,7 @@ function logIn( ingreso ) {
         timeline.addClass('oculto');
         avatarSel.removeClass('oculto');
 
-        titulo.text('Seleccione Personaje');
-    
+        titulo.text('Seleccione el menú');
     }
 
 }
@@ -89,7 +89,7 @@ avatarBtns.on('click', function() {
 
     usuario = $(this).data('user');
 
-    titulo.text('@' + usuario);
+    titulo.text(usuario);
 
     logIn(true);
 

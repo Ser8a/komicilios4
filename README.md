@@ -1,3 +1,3 @@
-# Chat de Héroes
+# Domicilios La Komilona de Andres
 
-Un cascarón de chat usando jQuery para PWAs
+Los platos que ofrece la Komilona de Andres exclusivo para domicilios.
