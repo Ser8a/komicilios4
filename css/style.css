@@ -9,7 +9,7 @@
     margin: 0px !important;
     color: #7f8c8d;
     font-size: 16px;
-    background-color: #dde1e2; 
+    background-color: #dfaf2e; 
     width: 100%;
 
     overscroll-behavior-y: contain;
@@ -21,8 +21,8 @@
 
 .titulo2 {
   width: 110px;
-  height: 50px;
-  border: 1px solid #ecf0f1;
+  height: 60px;
+  border: 0.5px solid #ecf0f1;
   position: center; 
 }
 
@@ -32,9 +32,11 @@
 }
 
 .seleccion {
-  margin-top: 6em;
+  margin-top: 10em;
   display: block;
   margin-bottom: 6em;
+  font-size: 15px;
+  color: whitesmoke;
 }
 
 .seleccion div {
@@ -49,8 +51,32 @@
   -o-border-radius: 50%;
   border-radius: 50%;*/
   height: 80px;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #230d01;
   position: relative; 
+}
+
+.izq {
+  float: left;
+  width: 20%;
+  position: top;
+  display: block;
+  
+    margin-left: auto;
+    margin-right: auto;
+  text-size-adjust: auto;
+}
+.der {
+  width:80%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-noti-activadas {
+  margin-top: 1em;
+  background-color: white;
+  font-size: 14px;
+  color: #230d01;
 }
 
 /* Modal */
@@ -59,7 +85,7 @@
   top: 1000px;
   height: 100%;
   width: 100%;
-  background-color: #ecf0f1;
+  background-color: #dfaf2e;
   z-index: 999;
   opacity: 0;
 }
@@ -220,7 +246,7 @@ textarea {
     width: 100%;
     display: block;
     list-style-type: none;
-    background-color: #dde1e2;
+    background-color: #dfaf2e;
     padding-bottom: 2em;
     padding-left: 0px;
     margin-bottom: 2em; 
@@ -249,7 +275,7 @@ textarea {
       -o-border-radius: 50%;
       border-radius: 50%;*/
       height: 100%;
-      border: 1px solid #ecf0f1;
+      border: 1px solid #dfaf2e;
       position: relative; 
     }
     .avatar:hover > .hover {
@@ -265,8 +291,8 @@ textarea {
     top: 0px;
 
     margin: auto;
-    background-color: #782F1F;
-    text-shadow: #782F1F 1px 1px 0;
+    background-color: #48360f;
+    text-shadow: #3d0e0c 1px 1px 0;
     padding: 1em 0 !important;
     color: white;
     text-align: center;
@@ -418,13 +444,13 @@ and (-webkit-device-pixel-ratio : 3) {
       color: #3498db; }
   
   h3 {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
     font-family: 'Lato';
     display: inline-block;
     margin-top: .1em;
     margin-bottom: .2em;
-    color: #95a5a6; 
+    color: #48360f; 
 }
   
   .retweet {

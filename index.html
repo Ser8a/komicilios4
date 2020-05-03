@@ -45,11 +45,9 @@
         <!-- Titulo -->
         <span class="first"> 
             <span id="salir-btn" class="fa fa-sign-out-alt out oculto animated fadeIn"></span>
-            <span id="titulo">
-               <!-- <img id="titulo" src="img/icons/titulo.png" class="titulo">-->
-            <i class="fa-user"></i>
-                La Komilona de Andres <br>
-                Seleccione el menu
+            <span id="titulo2">
+               <img id="titulo2" src="img/icons/titulo.png" class="titulo2">
+                               
             </span>
             <span id="nuevo-btn" class="fa fa-pen-square new oculto animated fadeIn fast"></span>
         </span>
@@ -90,45 +88,74 @@
 
         <!-- Seleccion de menu -->
         <div id="seleccion" class="seleccion animated fadeIn fast" align="center">
-        
             <div>
-                <img data-user="churrasco_gratinado" src="img/avatars/churrasco_gratinado.jpg" alt="churrasco_gratinado" class="seleccion-avatar">
+            <span id="titulo">
+                Selecciona la cantidad de platos
+                
+             </span>
+                        
+            </div>
+            <div>
+                <div class="izq">
+                    <label><input type="radio" name="churr1" value="1">1<br></label>
+                    <label><input type="radio" name="churr2" value="2">2<br></label>
+                    <label><input type="radio" name="churr3" value="3">3<br></label></div>
+                <div class="der">
+                    <img data-user="churrasco_gratinado" src="img/avatars/churrasco_gratinado.jpg" alt="churrasco" class="seleccion-avatar"></div>
             </div>
 
             <div>
-                <img data-user="mondongo" src="img/avatars/mondongo.jpg" alt="mondongo" class="seleccion-avatar">
+                <div class="menu izq">
+                    <input type="radio" name="mond1" value="1">1<br>
+                    <input type="radio" name="mond2" value="2">2<br>
+                    <input type="radio" name="mond3" value="3">3<br></div>
+                <div class="menu der">
+                    <img data-user="mondongo" src="img/avatars/mondongo.jpg" alt="mondongo" class="seleccion-avatar"></div>
             </div>
 
             <div>
-                <img data-user="pechuga_champi" src="img/avatars/pechuga_champi.jpg" alt="pechuga_champi" class="seleccion-avatar">
+                <div class="menu izq">
+                    <input type="radio" name="pech1" value="1">1<br>
+                    <input type="radio" name="pech2" value="2">2<br>
+                    <input type="radio" name="pech3" value="3">3<br></div>
+                <div class="menu der">
+                <img data-user="pechuga_champi" src="img/avatars/pechuga_champi.jpg" alt="pechuga_champi" class="seleccion-avatar"></div>
             </div>
 
             <div>
-                <img data-user="salmon_chileno" src="img/avatars/salmon_chileno.jpg" alt="salmon_chileno" class="seleccion-avatar">
+                <div class="menu izq">
+                    <input type="radio" name="salm1" value="1">1<br>
+                    <input type="radio" name="salm2" value="2">2<br>
+                    <input type="radio" name="salm3" value="3">3<br></div>
+                <div class="menu der">
+                <img data-user="salmon_chileno" src="img/avatars/salmon_chileno.jpg" alt="salmon_chileno" class="seleccion-avatar"></div>
             </div>
 
-            
+            <button class="btn-noti-activadas">Presione para seguir con el pedido</button>
 
         </div>
 
-        <!-- FIN Seleccion de personaje -->
+        <!-- FIN Seleccion de menu -->
 
         <!-- Lista de mensajes -->
         <ul id="timeline" class="timeline oculto">
             
             <!-- Mensaje -->
             <li class="animated fadeIn fast">
-                <div class="avatar">
-                    <img src="img/icons/icon-152x152.png">
-                </div>
+                
                 <div class="bubble-container">
                     <div class="bubble">
-                        <h3>CONTACTANOS</h3>
+                        <h3>INFORMACION DE DESPACHO</h3>
                         <br/>
-                        Realiza tu pedido a los telefonos 313 846 0237, 321 3431034
+                        <form method="post" action="action.php">
+                            Pedido: Aca va incluido el pedido que hizo en la pagina anterior. 
+                            Direccion: <input dir="ingresadir" type="text" value="Dirección"/><br>
+                            Telefono:  <input dir="ingresatel" type="text" value="Teléfono"/><br>
+                        </form>
+                        
                     </div>
                     
-                    <div class="arrow"></div>
+                    
                 </div>
             </li>
             <!-- Fin del mensaje -->

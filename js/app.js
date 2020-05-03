@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swLocation = '/Komicilios/sw.js';
+var swLocation = '/Komicilios3/sw.js';
 
 if (navigator.serviceWorker) {
 
@@ -26,7 +26,7 @@ var timeline    = $('#timeline');
 
 var modal       = $('#modal');
 var modalAvatar = $('#modal-avatar');
-var avatarBtns  = $('.seleccion-avatar');
+var avatarBtns  = $('.btn-noti-activadas');
 var txtMensaje  = $('#txtMensaje');
 
 // El usuario, contiene el ID del héroe seleccionado
@@ -67,7 +67,7 @@ function crearMensajeHTML(mensaje, personaje) {
 function logIn( ingreso ) {
 
     if ( ingreso ) {
-        nuevoBtn.removeClass('oculto');
+        nuevoBtn.addClass('oculto');
         salirBtn.removeClass('oculto');
         timeline.removeClass('oculto');
         avatarSel.addClass('oculto');
@@ -84,7 +84,7 @@ function logIn( ingreso ) {
 }
 
 
-// Seleccion de personaje
+// Seleccion de solicitud de envio
 avatarBtns.on('click', function() {
 
     usuario = $(this).data('user');
@@ -102,10 +102,10 @@ salirBtn.on('click', function() {
 
 });
 
-// Boton de nuevo mensaje
+// Boton de enviar
 nuevoBtn.on('click', function() {
 
-    modal.removeClass('oculto');
+modal.removeClass('oculto');
     modal.animate({ 
         marginTop: '-=1000px',
         opacity: 1
